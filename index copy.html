@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Flashcard Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1f0303;
+        }
+        .flashcard {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .popup {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+        .correct-popup {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="flashcard">
+        <h3>Spelling Flashcard Test</h3>
+        <button id="playSound">Play Sound</button>
+        <input type="text" id="userInput" placeholder="Type the word">
+        <button id="submitBtn">Submit</button>
+        <div id="popupMessage" class="popup"></div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
